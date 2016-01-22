@@ -121,5 +121,25 @@ public class Calculadora
         return esPrimo;
     }
     
+    
+    /**
+     * Realiza una multiplicacion entre dos numeros enteros
+     */
+    public int multiplicar(int a, int b)
+    {
+       
+        int contador = 0;
+        int resultado = 0;    
+           
+        while (contador < b)
+        {
+            resultado = resultado + a;
+            contador++;
+        }
+        if ((b >= 0 || a >= 0) && (b < 0 || a < 0))
+        {
+            resultado = -1;
+        }
+        return resultado;
     }
-
+}
